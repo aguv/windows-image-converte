@@ -1,0 +1,29 @@
+﻿<Window x:Class="test_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" SizeToContent="Height" Width="400">
+    <StackPanel Orientation="Vertical" Margin="10">
+        <StackPanel Orientation="Vertical" Margin="0 0 0 10">
+            <Button Name="selectButton" Content="Select image" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Width="75"
+            Margin="0 0 0 5"
+            Click="SelectButton_Click"/>
+            <TextBlock Name="imageNameTextBlock" 
+                       Text="-"
+       HorizontalAlignment="Left" 
+       VerticalAlignment="Top" Foreground="DarkSlateGray"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="Select format to convert:" Margin="0 0 0 5"/>
+            <RadioButton Name="radioBmp" Content="BMP" GroupName="Formats" Click="RadioButton_Click"/>
+            <RadioButton Name="radioGif" Content="GIF" GroupName="Formats" Click="RadioButton_Click"/>
+            <RadioButton Name="radioJpeg" Content="JPEG" GroupName="Formats" Click="RadioButton_Click"/>
+            <RadioButton Name="radioPng" Content="PNG" GroupName="Formats" Click="RadioButton_Click"/>
+            <RadioButton Name="radioTiff" Content="TIFF" GroupName="Formats" Click="RadioButton_Click"/>
+        </StackPanel>
+        <Button Name="convertButton" Content="Convert" Margin="0 10 0 0" IsEnabled="False" Click="ConverButton_Click"/>
+    </StackPanel>
+</Window>
