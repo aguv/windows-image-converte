@@ -6,6 +6,8 @@
 *.userosscache
 *.sln.docstates
 
+.Properties
+
 # Build results
 [Dd]ebug/
 [Rr]elease/
