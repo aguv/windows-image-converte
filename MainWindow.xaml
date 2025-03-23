@@ -1,7 +1,7 @@
-﻿<Window x:Class="test_wpf.MainWindow"
+﻿<Window x:Class="converter.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" SizeToContent="Height" Width="400">
+        Title="Image converter" SizeToContent="Height" Width="400">
     <StackPanel Orientation="Vertical" Margin="10">
         <StackPanel Orientation="Vertical" Margin="0 0 0 10">
             <Button Name="selectButton" Content="Select image" 

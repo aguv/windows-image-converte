@@ -6,11 +6,11 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 
-namespace test_wpf
+namespace converter
 {
     public partial class MainWindow : Window
     {
-        private BitmapImage _selectedImage = new();
+        private BitmapImage? _selectedImage;
         private string _originalFormat = "";
         private string _selectedFormat = "";
 
